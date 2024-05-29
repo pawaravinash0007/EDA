@@ -1,8 +1,7 @@
 numpy==1.26.4
 streamlit== 1.32.2
 seaborn== 0.13.2
-matplotlib== 3.7.0
+matplotlib== 3.8.4
 pandas==1.2.3
-plotly==5.9.0
 pandas==2.1.4
 pandas-profiling==3.2.0
