@@ -3,8 +3,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-import ydata_profiling
-#from ydata_profiling import ProfileReport
+#import ydata_profiling
+from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
