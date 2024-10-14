@@ -3,7 +3,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from ydata_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -15,7 +14,7 @@ def load_data():
 	wine_data=pd.read_csv("winequality.csv")
 	return wine_data
 df=load_data()
-pr = ProfileReport(df, explorative=True)
+
 if  st.sidebar.checkbox("Visulization",False): 
 	#if  st.sidebar.checkbox("Visulization",False):
 	graph=st.sidebar.selectbox("Select Graph",("CountPlot","Heatmap","ScatterPlot","ScatterPlot1","ScatterPlot2","3D","Hist","BoxPlot"))
